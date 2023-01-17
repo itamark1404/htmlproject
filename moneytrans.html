@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+			<header>
+			<div class="row">
+				<div class="column">
+					<center>
+						<img src="http://shorturl.at/lrsuR" alt="logo" width="150px" hight="150px"> 
+					</center>
+				</div>
+				
+				<div class="column">
+					<h1 style="width:100"> Bank Of The Free Mind </h1>
+				</div>
+			</div>
+		</header>
+		<meta charset="utf-8">
+		<title> BOTFM </title>
+		<style type="text/css">
+		
+			header {
+				background-color: #062f67;
+				padding: 10px;
+				text-align: center;
+				color: white;
+				font-size: 25px;
+				}
+			.column{
+				float: right;
+				width: 33.33%;
+				padding: 5px;
+			}
+			.row:after{
+				content: "";
+				clear: both;
+				display: table;
+			}
+			html, body {
+				height: 100%;
+				width: 100%;
+				margin: 0;
+				display: table;
+			}
+
+			footer {
+				display: table-row;
+				height: 0;
+				background-color: #062f67;
+				padding: 10px;
+				text-align: center;
+				color: white;
+				font-size: 25px;
+				}
+			table, th, td {
+			border:1px solid black;
+			}
+			.btnsub{
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			background-color: #062f67;
+			}
+			
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #062f67;
+  position: fixed;
+  height: 60%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4ebad7;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #78d0e3;
+  color: white;
+}
+
+		
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><button style="background-color:maroon"><a class="active" href="login.html">Login</a></button></li>
+			
+		</ul>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="loggedin.html">Home</a></li>
+					<li><a class="active" href="moneytrans.html">Money transfers</a></li>
+					<li><a href="profile.html">My account</a></li>
+				</ul>
+			</nav>
+		</section>
+		<center>
+		<h1 class="mt">Money Transfers</h1>
+			<table style="width:50%">
+			 <tr>
+				<td>bank name</td>
+				<td>acount number</td>				
+				<td>how much</td>
+				<td>when</td>
+			 </tr>
+			 <tr>
+				<td>
+				<label for="banks">Choose a Bank:</label>
+				<select id="banks">
+				  <option value="leumi">leumi</option>
+				  <option value="hapoalim">hapoalim</option>
+				  <option value="discount">discount</option>
+				  <option value="yahav">yahav</option>
+				</select></td>
+				<td><input type="text" id="an" name="accountnumber" placeholder="ex: 924-654875"></td>
+				<td><input type="text" id="hm" name="howmuch" placeholder="ex: 1,000"></td>
+				<td><input type="date" id="transferdate" name="date"></td>
+			 </tr>
+			</table>
+			<br>
+			<br>
+			<br>
+			<button type="button" class="btnsub" onclick="myFunction()">submit</button>
+			<script>
+				function myFunction() {
+				  alert("Transfer successful");
+				}
+			</script>				
+		</center>
+		
+	</body>
+		<footer>
+		<a href="about.html">
+			<h3>About</h3>
+		</a>
+	</footer>
+</html>
