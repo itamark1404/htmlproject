@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BOTFM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-11" style="background-color:#062f67;"><h1 class="headerh1">Bank Of The Free Mind</h1></div>
+        <div class="col-sm-1" style="background-color:#062f67;"><img class="img-responsive" src="banklogo.jpg" alt="logo" width="100px" height="100px">  </div>
+      </div>
+    </div>
+
+  </header>
+
+  <style>
+    header {
+
+      background-color: #062f67;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    .headerh1 {
+      font-size:40px;
+      padding:5px;
+    }
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .navbar-footer {
+      background-color: #062f67;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #062f67;
+      color: white;
+      padding: 5px;
+    }
+    .about {
+      color: white;
+    }
+
+    .btnc {background-color: red;}
+
+    .btns {background-color: lightgreen;}
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="banklogo.jpg" alt="logo" width="30px" height="30px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a class="btn btn-lg" href="WelcomeBS.html">Log out</a></li>
+        <li><a class="btn btn-lg" href="LoggedBS.html">My account</a></li>
+        <li><a class="btn btn-lg" href="MoneyTransferBS.html">Money Transfers</a></li>
+        <li class="active"><a class="btn btn-lg" href="ProfileUpdateBS.html">account update</a></li>
+        <li><a class="btn btn-lg" href="ChatBS.html">Chat with us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btnc btn-lg" data-dismiss="modal">Cancle</button>
+        <button type="button" class="btns btn-lg" data-dismiss="modal" onclick="window.location.href='LoginBS.html';">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+
+
+
+    </div>
+    <div class="col-sm-8 text-left">
+      <h1 class="pa">Personal Area</h1>
+      <table style="width:50%">
+        <tr>
+          <td><lable><b>name</b></lable></td>
+          <td>Itamar Kisos</td>
+          <td><input type="text" id="cn" name="changename" placeholder="ex: Roman Zaikin"></td>
+        </tr>
+        <tr>
+          <td><lable><b>date of birth</b></lable></td>
+          <td>14/04/1999</td>
+          <td><input type="date" id="birthdate" name="date"></td>
+        </tr>
+        <tr>
+          <td><lable><b>phone number</b></lable></td>
+          <td>+97248596321</td>
+          <td><input type="text" id="cpn" name="changephonenum" placeholder="ex: +97248596321"></td>
+        </tr>
+        <tr>
+          <td><lable><b>email</b></lable></td>
+          <td>ex@example.com</td>
+          <td><input type="text" id="ce" name="changeemail" placeholder="ex: itsafe@gmail.com"></td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <br>
+      <button type="button" class="btnsub btn-lg" onclick="myFunction()">submit</button>
+      <script>
+				function myFunction() {
+				  alert("Update successful");
+				}
+			</script>
+    </div>
+    <div class="col-sm-2 sidenav">
+
+
+
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <nav class="navbar-footer navbar-inverse">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="footerNavbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="aboutBS.html">
+              <h3>About</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</footer>
+
+</body>
+</html>
